@@ -1,0 +1,144 @@
+label {
+  display: block;
+  margin-top: 10px;
+}
+
+.card-container.card {
+  max-width: 350px !important;
+  padding: 40px 40px;
+}
+
+.card {
+  background-color: #f7f7f7;
+  padding: 20px 25px 30px;
+  margin: 0 auto 25px;
+  margin-top: 50px;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  -moz-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+.profile-img-card {
+  width: 96px;
+  height: 96px;
+  margin: 0 auto 10px;
+  display: block;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+}
+
+.homeContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: white;
+}
+
+.homeContent {
+  display: flex;
+  justify-content: center;
+  background-color: #212529;
+  padding: 20px;
+  border-radius: 50px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 500px;
+  height: 150px;
+  margin-bottom: 225px;
+}
+
+h1{
+  color: white;
+  border: 0px;
+}
+
+header{
+  margin-top: 0px;
+}
+
+.homeContainer{
+  background-color: #6e6e80;
+}
+
+table {
+ background-color: #353740;
+}
+
+.table-striped>tbody>tr:nth-of-type(odd)>* {
+  --bs-table-accent-bg: var(--bs-table-striped-bg);
+  color: white;
+}
+
+.table-bordered thead td, .table-bordered thead th {
+  border-bottom-width: 2px;
+  color: white;
+}
+
+.table-bordered>:not(caption)>* {
+  border-width: var(--bs-border-width) 0;
+  color: white;
+}
+
+header.jumbotron {
+  margin-top: 90px;
+  background-color: #353740;
+  border-radius: 50px;
+}
+
+h3 {
+  color: 		#BEBEBE;
+  text-align: center;
+
+}
+
+.text {
+  display: flex;
+  align-items: center;
+}
+
+.card-container.card{
+  background-color: #353740;
+  padding: 25px;
+}
+
+.card.col-md-6.offset-md-3.offset-md-3 {
+  background-color: #353740;
+}
+
+.containerProfile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+footer {
+  
+  padding: 10px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  
+}
+
+.items {
+  display: flex;
+  align-items: baseline;
+
+}
+
+p {
+  padding: 20px;
+  padding-bottom: 0px;
+  padding-top: 0px;
+}
+
+.clock {
+  color: #212529;
+}
+
+
