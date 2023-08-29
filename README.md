@@ -3,10 +3,6 @@
 ```bash
 docker run --name vts_db --rm -e  POSTGRES_PASSWORD=pass123 -e POSTGRES_DB=MyVTSdb --net=host -v pgsdata14:/var/lib/postgresql/data  -d postgres:14
 ```
-run init sql scripts
-```bash
-docker run --name vts_db --rm -e  POSTGRES_PASSWORD=pass123 -e POSTGRES_DB=MyVTSdb --net=host -v "$(pwd)"/assets/db:/docker-entrypoint-initdb.d -v pgsdata14:/var/lib/postgresql/data -d postgres:14
-```
 
 ## remove db data
 ```bash
