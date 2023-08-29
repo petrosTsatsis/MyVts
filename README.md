@@ -3,6 +3,8 @@
 ```bash
 docker run --name vts_db --rm -e  POSTGRES_PASSWORD=pass123 -e POSTGRES_DB=MyVTSdb --net=host -v pgsdata14:/var/lib/postgresql/data  -d postgres:14
 ```
+After using the docker command and run the app to create the tables in the database you need to run the users.sql file in the assets directory to 
+insert the default users in the database.
 
 ## remove db data
 ```bash
