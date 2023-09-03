@@ -36,7 +36,7 @@ public class Buyer{
 
     @Column(name = "phoneNumber")
     @NotNull(message = "Phone is required")
-    private int phoneNum;
+    private String phoneNum;
 
     @OneToMany(mappedBy="buyer",
             cascade= {CascadeType.PERSIST, CascadeType.MERGE,
@@ -55,7 +55,7 @@ public class Buyer{
 
     }
 
-    public Buyer(String firstName, String lastName, String email, String VATnum, int phoneNum) {
+    public Buyer(String firstName, String lastName, String email, String VATnum, String phoneNum) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.email = email;
@@ -103,11 +103,11 @@ public class Buyer{
         this.VATnum = VATnum;
     }
 
-    public int getPhoneNum() {
+    public String getPhoneNum() {
         return phoneNum;
     }
 
-    public void setPhoneNum(int phoneNum) {
+    public void setPhoneNum(String phoneNum) {
         this.phoneNum = phoneNum;
     }
 
