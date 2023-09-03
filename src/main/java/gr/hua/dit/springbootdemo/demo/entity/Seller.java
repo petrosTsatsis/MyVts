@@ -39,7 +39,7 @@ public class Seller implements Serializable {
 
     @Column(name = "phoneNumber")
     @NotNull(message = "Phone is required")
-    private int phoneNum;
+    private String phoneNum;
 
     @OneToMany(mappedBy="seller",
             cascade= {CascadeType.PERSIST, CascadeType.MERGE,
@@ -54,7 +54,7 @@ public class Seller implements Serializable {
     private List<Transaction> transactions;
 
 
-    public Seller(String firstName, String lastName, String email, String VATnum, int phoneNum) {
+    public Seller(String firstName, String lastName, String email, String VATnum, String phoneNum) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.email = email;
@@ -106,11 +106,11 @@ public class Seller implements Serializable {
         this.VATnum = VATnum;
     }
 
-    public int getPhoneNum() {
+    public String getPhoneNum() {
         return phoneNum;
     }
 
-    public void setPhoneNum(int phoneNum) {
+    public void setPhoneNum(String phoneNum) {
         this.phoneNum = phoneNum;
     }
 
